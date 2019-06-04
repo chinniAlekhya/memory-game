@@ -1,0 +1,22 @@
+.butto{
+    text-align:center;
+    width:100px;
+    height:50px;
+    background-color:red;
+  
+}
+body{
+    background-image: url("img.jpg");
+    background-repeat: repeat;
+    background-size: 2000px 1000px;
+}
+#timer{
+ width:100px;
+ height:100px;
+ float:right;
+ margin-right:400px;
+ }
+ .t{
+ text-align:center;
+ color:blue;
+ }
