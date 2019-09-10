@@ -13,27 +13,27 @@ function myfunction(){
   }
 function displayImage(){
    document.write(getImage());
-   setTimeout(myfunction,4000);
+   setTimeout(myfunction,5000);
    var hidden = false;
-setInterval(function(){document.getElementById("id11").style.visibility= hidden ? "visible" : "hidden";},100);
+setInterval(function(){document.getElementById("id11").style.visibility= hidden ? "visible" : "hidden";},1000);
 
 }
 displayImage();
-
-
-
 function clik(me){
     i= me.id;
     }
  function check(){
    ii=document.getElementsByTagName("img")[randomIndex+1].getAttribute("class");
  if(i===ii){
-    alert("you won");    
- }
-
- else{
+    alert("you won");   
+    document.getElementById(ii).disable=true;
+    
+ } else{
     alert("you lose"+"\n"+"try again");
+    document.getElementById(ii).disable=true;
  }
 }
+
+
 
 
